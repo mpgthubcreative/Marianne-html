@@ -237,9 +237,21 @@ border-radius: 15px;
   grid-template-columns: 1fr;
  }
 
- .hero-image{
-  object-fit: fill;
- }
+ .hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .hero-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
+  }
+
  .feature1container{
   grid-template-columns: 1fr;
   text-align: center;
