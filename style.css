@@ -1,7 +1,9 @@
+/* Navbar */
+
 .container{
   display: flex;
   justify-content: space-between;
-  
+  margin-top: 20px;
 
 }
 
@@ -12,7 +14,7 @@
   margin-left: 20px;
   font-family: margarine;
   font-size: 35px;
-  
+   
 }
 
 
@@ -20,24 +22,34 @@
 text-decoration: none;
 color: black;
   
+  
 }
 .bar2{
   display: flex;
   flex-direction: row; 
-  margin-right: 20px;
+  gap: 20px;
    font-family: lora;
+ 
+  
+   
 }
 
 .navigation{
   display: flex;
-  margin: 20px;
- 
-  
+  flex-direction: row;
+}
+
+.navigation a{
+  text-decoration: none;
+  padding: 20px;
+}
+
+.nav1{
+  justify-content: space-between;
+  color: black;
 }
 
 .connect{
-  margin: 9px;
-  padding: 10px;
   border: solid;
   background-color: black;
   color: aliceblue;
@@ -47,70 +59,68 @@ color: black;
   
 }
 
-.herocontainer{
-  background-color:gainsboro;
-  display: flex;
-  padding: 30px;
-  margin-top: 20px;
+/* Hero */
 
+.herogrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: gainsboro;
+  padding: 50px;
+  margin-top: 20px;
 }
 
 .hero1{
-  height: 70vh;
-  width: 40%;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.hero1 h2{
+.hero1 h4{
+  font-size: 4rem;
   font-family: margarine;
-  font-size: 50px;
+  margin-bottom: 2rem;
+
 }
 
 .hero1 p{
+  font-size: 1rem;
   font-family: lora;
-  font-size: 20px;
+
 }
 
-.bwelcome{
-  border: none;
-  padding: 10px 10px;
+.hero1 button{
   width: 200px;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border: none;
   background-color: black;
   color: white;
-  font-family: lora;
-  font-size: 18px;
-  border-radius: 15px;
-  margin-top: 20px;
-  cursor: pointer;
 }
 
-.hero2{
-  width: 60%;
-  height: 70vh;
+.herob a{
+text-decoration: none;
+color: white;
+font-size: 20px;
 }
 
-.heroimage{
-  height: 450px;
+.hero-image{
+  object-fit: cover;
+  height:fit-content;
 }
+
+
+/* feature */
 
 .featurecontainer{
-  display: flex;
-  justify-content: center;
+ text-align: center;
   margin-top: 50px;
-}
-
-.feature{
-  text-align: center;
   font-family: lora;
-  font-size: 20px;
+  margin-bottom:50px;
 }
 
 .feature1container{
-  display: flex;
-  justify-content: center;
-  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap:30px;
 }
 
@@ -138,6 +148,8 @@ height: 400px;
 border-radius: 15px;
 }
 
+/* Bootstrap */
+
 #carouselExampleIndicators{
   width: 650px;
   margin-left: 100px;
@@ -145,16 +157,18 @@ border-radius: 15px;
 }
 
 .bootstrapcontainer{
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 50px ;
  
 }
 
 #carouselExampleIndicators{
-  width: 45%;
+  width: auto;
 }
 
 .bootstrapH{
-  width: 55%;
+  width: auto;
   margin-left: 50px;
   margin-top: 60px;
 
@@ -184,16 +198,66 @@ border-radius: 15px;
   width: 200px;
 }
 
-@media (max-width: 768px) {
-  .hero1,
-  .hero2 {
-    height: auto;
-    width: 100%;
-    margin: 0;
-  }
+.uiux{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px;
+  margin-left: 80px;
+  margin-right: 60px;
+  gap: 50px;
+}
 
-  img {
-    height: auto;
-    width: 100%;
-  }
+.uiux img{
+ height: 428px;
+ width: 280px;
+ border-radius: 0;
+ margin-top: 10px;
+ padding: 20px;
+ padding-bottom: 0;
+}
+
+
+.uiux h4{
+ font-size: 20px;
+ text-align: center;
+ margin-top: 30px;
+ font-weight: 400;
+}
+
+.uiux div{
+  background-color: gainsboro;
+  text-align: center;
+}
+
+.uiuxheader{
+  text-align: center;
+  font-family: lora;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+ 
+ .herogrid{
+  grid-template-columns: 1fr;
+ }
+
+ .hero-image{
+  object-fit: fill;
+ }
+ .feature1container{
+  grid-template-columns: 1fr;
+ }
+
+ .bootstrapcontainer{
+  grid-template-columns: 1fr;
+ }
+
+.uiux{
+grid-template-columns: 1fr;
+}
+
 }
