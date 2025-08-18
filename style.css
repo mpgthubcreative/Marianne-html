@@ -234,7 +234,10 @@ border-radius: 15px;
 @media (max-width: 768px) {
  
  .herogrid{
-  grid-template-columns: 1fr;
+   display: flex ;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 1;
  }
 
  .hero-image {
@@ -285,4 +288,5 @@ text-align: center;
 
 
 }
+
 
