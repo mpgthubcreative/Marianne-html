@@ -232,7 +232,13 @@ border-radius: 15px;
 
 
 @media (max-width: 768px) {
- 
+
+
+  .container{
+  display: flex;
+  justify-content: space-between;
+}
+  
  .herogrid{
    display: flex ;
   flex-direction: column;
@@ -288,5 +294,6 @@ text-align: center;
 
 
 }
+
 
 
