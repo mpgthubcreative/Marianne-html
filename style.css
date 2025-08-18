@@ -255,10 +255,21 @@ border-radius: 15px;
  .feature1container{
   grid-template-columns: 1fr;
   text-align: center;
+     
  }
 
  .bootstrapcontainer{
   grid-template-columns: 1fr;
+  
+ }
+
+ .carousel-item {
+  max-width: 450px;
+
+ }
+
+ .bootstrapH p{
+  max-width: 450px;
  }
 
 .uiux{
