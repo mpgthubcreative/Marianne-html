@@ -259,22 +259,22 @@ border-radius: 15px;
  }
 
  .bootstrapcontainer{
-   display:flex;
-   flex-direction: column;
+  display: flex ;
+  flex-direction: column;
   justify-content: center;
+
+   
   
  }
 
-  .carousel-item {
-
-    max-width: 500px;
-
+ .carousel-item {
+   width: 100%;
+   
  }
 
  .bootstrapH p{
- 
-    max-width: 500px;
-  
+    width: 100%;
+   
  }
 
 .uiux{
@@ -282,10 +282,4 @@ grid-template-columns: 1fr;
 text-align: center;
 }
 
-
 }
-
-
-
-
-
