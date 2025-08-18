@@ -264,19 +264,15 @@ border-radius: 15px;
  }
 
   .carousel-item {
-   width: 100%;
+
     max-width: 500px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 15px;
+
  }
 
  .bootstrapH p{
-    width: 100%;
+ 
     max-width: 500px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 15px;
+  
  }
 
 .uiux{
@@ -286,3 +282,4 @@ text-align: center;
 
 
 }
+
