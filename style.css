@@ -259,19 +259,21 @@ border-radius: 15px;
  }
 
  .bootstrapcontainer{
+   display:grid;
   grid-template-columns: 1fr;
+     text-align: center;
   
  }
 
   .carousel-item {
 
-    max-width: 95%;
+    max-width: 100%;
 
  }
 
  .bootstrapH p{
  
-    max-width: 95%;
+    max-width: 100%;
   
  }
 
@@ -282,6 +284,7 @@ text-align: center;
 
 
 }
+
 
 
 
