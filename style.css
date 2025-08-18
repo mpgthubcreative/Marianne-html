@@ -265,13 +265,13 @@ border-radius: 15px;
 
   .carousel-item {
 
-    max-width: 100%;
+    max-width: 95%;
 
  }
 
  .bootstrapH p{
  
-    max-width: 100%;
+    max-width: 95%;
   
  }
 
@@ -282,5 +282,6 @@ text-align: center;
 
 
 }
+
 
 
