@@ -263,18 +263,26 @@ border-radius: 15px;
   
  }
 
- .carousel-item {
-  max-width: 450px;
-
+  .carousel-item {
+   width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
  }
 
  .bootstrapH p{
-  max-width: 450px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 15px;
  }
 
 .uiux{
 grid-template-columns: 1fr;
 text-align: center;
 }
+
 
 }
